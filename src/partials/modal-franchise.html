@@ -16,27 +16,21 @@
             below and we will reach out for additional information. We appreciate your patience.
         </p>
         <form class="modal_form">
-            <label class="modal_form_field">
-                <span class="modal_form_fild_desk">Name</span>
-                <span class="modal_form_input_wrapper">
-                    <input class="modal_form_input" type="text" name="user_name" required pattern="[a-zA-Zа-яА-ЯіІїЇ]+">
-                </span>
+            <label class="form-products-fild">
+                <input class="products-fild-input" type="text" name="name" placeholder="Name" required minlength="2"
+                    pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space." />
             </label>
-            <label class="modal_form_field">
-                <span class="modal_form_fild_desk">Phone</span>
-                <input class="modal_form_input" type="tel" name="phone" required
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+            <label class="form-products-fild">
+                <input class="products-fild-input" type="tel" name="tel" placeholder="Phone"
+                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}"
+                    title="Enter the phone number in the format 099-00-00-000" required />
             </label>
-            <label class="modal_form_field">
-                <span class="modal_form_fild_desk">Email</span>
-                <span class="modal_form_input_wrapper">
-                    <input class="modal_form_input" type="email" name="email" required
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                </span>
+            <label class="form-hero-fild">
+                <input class="fild-input" type="email" name="email" placeholder="Email" required />
             </label>
-            <label class="modal_form_field">
-                <span class="modal_form_fild_desk">Comment</span>
-                <textarea class="modal_form_message" placeholder="Введіть текст"></textarea>
+            <label class="form-hero-fild">
+                <textarea class="fild-text" name="text" placeholder="Comment">
+                </textarea>
             </label>
 
             <button class="modal_form_submit" type="submit">Submit</button>
